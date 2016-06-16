@@ -1,0 +1,21 @@
+{
+  "name": "web-developer-portfolio",
+  "description": "This is my portfolio where I will be adding some of my more recent projects along with a description of who I am.",
+  "main": "index.html",
+  "authors": [
+    "Adrian J Lopez"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Bootstrap"
+  ],
+  "homepage": "https://github.com/jayzamazing/Web-Developer-Portfolio",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.0.0"
+  }
+}
