@@ -19,27 +19,39 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="">Contact Me</a></li>
+                        <li><a href="#myModal" data-toggle="modal"><h3>Contact Me</h3></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="jumbotron">
             <h1 class="text-uppercase">Adrian J Lopez</h1>
-            <h3>Web Developer</h3>
+            <h2>Web Developer</h2>
         </div>
     </header>
-    <section class="projects-section col-lg-8 col-lg-offset-2">
+    <section class="description col-lg-8 col-lg-offset-2 container">
         <div class="row">
-            <h3>Projects</h3>
-            <div class="projects ">
+            <div>
+                <h3>Intro</h3>
+                <div class="col-lg-12">
+                    <p>I am a web developer with a passion for new technology. Skilled at HTML, CSS, Javascript, jQuery, and Nodejs, Npm, Bower. Familiar with Java, Android, MySQL and tools like Maven, Gradle, and Spring to name a few.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects-section col-lg-8 col-lg-offset-2 container">
+        <div class="row">
+            <div class="projects">
+                <h3>Projects</h3>
                 <h4>Music Quiz App</h4>
                 <div class="project-description col-lg-8">This is an web app that asks the user to identify the artist and album a set of lyrics are from. The user can also play the music for a clue to answer the question. This was done in Html, CSS, Bootstrap, Handlebars, Run-Auto, Request,
                     Jquery, Javascript, Json, Node, Express, Npm, Spotify Api, MusixMatch Api, and spotify-web-api-node.</div>
                 <div class="project-picture col-lg-4">
-                    <a href="https://music-quiz-app-jayzamazing.c9users.io"><img src="img/musicquizapp.png" alt="music quiz app picture" class="img-responsive"></a>
+                    <a href="http://musicquizapp-adrianjaylopez.rhcloud.com/"><img src="img/musicquizapp.png" alt="music quiz app picture" class="img-responsive"></a>
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="projects">
                 <h4>Awesome Shopping List</h4>
                 <div class="project-description col-lg-8">This is a shopping list app that allows for the creation of various lists with their own items. The lists are stored locally, so coming back to the page the user will be able to see their previous list. In the shopping list section, the
@@ -50,17 +62,55 @@
             </div>
         </div>
     </section>
-    <footer class="content-footer col-lg-8 col-lg-offset-2">
-        <ul class="social col-lg-3 col-centered">
-            <li><a href="https://twitter.com/AdrianJayLopez" target=_Blank><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/jayzamazing" target=_Blank><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/pub/adrian-lopez/99/341/688" target=_Blank><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a></li>
-            <li><a href="https://plus.google.com/108258618753081021419" target=_Blank><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a></li>
-        </ul>
-
+    <aside class="container col-lg-1">
+        <div class="navbar navbar-default navbar-left" role="navigation">
+            <ul class="social">
+                <li><a href="https://twitter.com/AdrianJayLopez" target=_Blank><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/jayzamazing" target=_Blank><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/pub/adrian-lopez/99/341/688" target=_Blank><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/108258618753081021419" target=_Blank><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </aside>
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="modalLabel">Feel free to contact me using this form or any of the social media links on the side of the page.</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal col-sm-12" id="contactForm">
+                        <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Please fill out this field." type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>E-Mail</label>
+                            <input class="form-control email" placeholder="email@yourdomain.com" data-placement="top" data-trigger="manual" data-content="Please use a valid email address." type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="Your message." data-placement="top" data-trigger="manual"></textarea>
+                        </div>
+                        <div class="form-group">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button form="contactForm" type="submit" value="submit" class="btn btn-success pull-right">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container col-lg-8 col-lg-offset-2">
+        <span class="copyright">&#169; Adrian Jay Lopez</span>
     </footer>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
