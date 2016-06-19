@@ -80,19 +80,18 @@
                     <h3 id="modalLabel">Feel free to contact me using this form or any of the social media links on the side of the page.</h3>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal col-sm-12" id="contactForm">
-                        <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
+                    <form class="form-horizontal col-sm-12" id="contact-form">
                         <div class="form-group">
-                            <label>Name</label>
-                            <input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Please fill out this field." type="text">
+                            <label for="full_name">Name</label>
+                            <input id="full_name" name="full_name" class="form-control" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Name must be at least 3 characters long." type="text">
                         </div>
                         <div class="form-group">
                             <label>E-Mail</label>
-                            <input class="form-control email" placeholder="email@yourdomain.com" data-placement="top" data-trigger="manual" data-content="Please use a valid email address." type="text">
+                            <input id="email" name="email" class="form-control email" placeholder="email@yourdomain.com" data-placement="top" data-trigger="manual" data-content="Please use a valid email address." type="text">
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea class="form-control" placeholder="Your message." data-placement="top" data-trigger="manual"></textarea>
+                            <textarea id="message" name="message" class="form-control" placeholder="Your message." data-placement="top" data-trigger="manual"></textarea>
                         </div>
                         <div class="form-group">
                         </div>
@@ -100,7 +99,7 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                    <button form="contactForm" type="submit" value="submit" class="btn btn-success pull-right">Submit</button>
+                    <button form="contact-form" type="submit" value="submit" class="btn btn-success pull-right">Submit</button>
                 </div>
             </div>
         </div>
@@ -110,6 +109,7 @@
     </footer>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
     <script src="js/app.js"></script>
 </body>
 
