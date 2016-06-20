@@ -1,8 +1,10 @@
 body, .modal-content{
   background-color: #E1F5FE;
+  font-family: 'Permanent Marker', cursive;
 }
 h1, h3, h4 {
   opacity: 0.87;
+  font-family: 'Dosis', sans-serif;
 }
 p {
   opacity: 0.54;
