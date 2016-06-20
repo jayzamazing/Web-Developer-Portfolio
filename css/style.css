@@ -1,5 +1,11 @@
-body {
-
+body, .modal-content{
+  background-color: #E1F5FE;
+}
+h1, h3, h4 {
+  opacity: 0.87;
+}
+p {
+  opacity: 0.54;
 }
 .jumbotron {
     min-width: 100%;
@@ -9,6 +15,7 @@ body {
     margin-top: 70px;
 }
 .jumbotron h1, .jumbotron h2 {
+    opacity: 0.87;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
     margin: 10px;
@@ -19,4 +26,21 @@ body {
 aside {
   position: fixed !important;
   top: 47rem;
+}
+footer {
+  padding-top: 50px;
+  margin-top: 100px;
+  background-color: #B3E5FC;
+}
+footer p {
+  text-align: center;
+}
+.navbar {
+  background-color: #03A9F4;
+}
+header h3 {
+  color: white;
+}
+.social-footer ul{
+  min-width: 200px;
 }
