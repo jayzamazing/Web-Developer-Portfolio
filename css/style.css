@@ -1,13 +1,14 @@
-body, .modal-content{
-  background-color: #E1F5FE;
-  font-family: 'Permanent Marker', cursive;
+body, .modal-content {
+    background-color: #E1F5FE;
+    font-family: 'Permanent Marker', cursive;
 }
 h1, h3, h4 {
-  opacity: 0.87;
-  font-family: 'Dosis', sans-serif;
+    opacity: 0.87;
+    font-family: 'Dosis', sans-serif;
 }
 p {
-  opacity: 0.54;
+    opacity: 0.54;
+    font-size: 2rem;
 }
 .jumbotron {
     min-width: 100%;
@@ -23,26 +24,21 @@ p {
     margin: 10px;
 }
 .social li {
-  display: inline-block;
-}
-aside {
-  position: fixed !important;
-  top: 47rem;
+    display: inline-block;
 }
 footer {
-  padding-top: 50px;
-  margin-top: 100px;
-  background-color: #B3E5FC;
+    margin-top: 100px;
+    background-color: #B3E5FC;
 }
 footer p {
-  text-align: center;
+    text-align: center;
 }
 .navbar {
-  background-color: #03A9F4;
+    background-color: #03A9F4;
 }
 header h3 {
-  color: white;
+    color: white;
 }
-.social-footer ul{
-  min-width: 200px;
+.social-footer ul {
+    min-width: 200px;
 }
