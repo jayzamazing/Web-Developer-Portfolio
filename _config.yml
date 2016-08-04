@@ -1,0 +1,13 @@
+# Site settings
+title: "Adrian J Lopez"
+email: adrianjaylopez@gmail.com
+description: "Web Developer"
+baseurl: ""
+url: "http://localhost:4000"
+twitter_username: AdrianJayLopez
+github_username: jayzamazing
+linkedin_username: adrian-lopez/99/341/688
+googleplus_username: 108258618753081021419
+# Build settings
+markdown: kramdown
+permalink: pretty
