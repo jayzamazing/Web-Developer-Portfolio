@@ -20,4 +20,4 @@ Of course, if you need to do some troubleshooting you could run node-inspector a
 node-inspector
 mocha test.js --compilers js:babel-core/register --debug-brk
 {% endhighlight %}
-I learned this from the following link : <a href="http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/">http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/</a>
+I learned this from the following link : <a href="http://jamesknelson.com/testing-in-es6-with-mocha-and-babel-6/">Link</a>

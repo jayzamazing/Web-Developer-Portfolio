@@ -33,6 +33,6 @@ babel-node filename
 {% highlight ruby %}
  entry: ['babel-polyfill', filename.js]
 {% endhighlight %}
- To see a full example of the webpack.config.js, you can look at the following git commit: <a href="https://github.com/jayzamazing/Restaurant-POS/commit/9ecf554dc3ca1ad24eb20cd3523c8294b864c5a2">https://github.com/jayzamazing/Restaurant-POS/commit/9ecf554dc3ca1ad24eb20cd3523c8294b864c5a2</a>
+ To see a full example of the webpack.config.js, you can look at the following git commit: <a href="https://github.com/jayzamazing/Restaurant-POS/commit/9ecf554dc3ca1ad24eb20cd3523c8294b864c5a2">Link</a>
 
- I learned ES7 async/await from the Thinkful Web Developer Career program and I learned about compiling ES7 code using webpack and babel-polyfill from <a href="https://github.com/babel/babel-loader/issues/161">https://github.com/babel/babel-loader/issues/161</a>.
+ I learned ES7 async/await from the Thinkful Web Developer Career program and I learned about compiling ES7 code using webpack and babel-polyfill from <a href="https://github.com/babel/babel-loader/issues/161">Link</a>.

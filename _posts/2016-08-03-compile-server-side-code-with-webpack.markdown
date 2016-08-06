@@ -45,4 +45,4 @@ fs.readdirSync('node_modules')
 {% endhighlight %}
   The important parts to take away from this are the 'target: node' which says not to touch any node modules and the 'fs.readdirsync' and 'externals: nodeModules' sections which tell webpack to keep the requires.
 
-  I ended up finding this information on the following site which offers a better description of what I summed up: <a href="http://jlongster.com/Backend-Apps-with-Webpack--Part-I">http://jlongster.com/Backend-Apps-with-Webpack--Part-I</a>
+  I ended up finding this information on the following site which offers a better description of what I summed up: <a href="http://jlongster.com/Backend-Apps-with-Webpack--Part-I">Link</a>
