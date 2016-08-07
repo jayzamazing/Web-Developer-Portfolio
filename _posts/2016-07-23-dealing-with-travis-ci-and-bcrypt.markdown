@@ -3,7 +3,7 @@ layout: posts
 title: How to deal with Bcrypt and Travis-Ci build errors
 date: 'August 3, 2016'
 ---
-When I was pushing one of my projects to Travis Ci I keept getting the following build errors:
+When I was pushing one of my projects to Travis Ci I kept getting the following build errors:
 {% highlight ruby %}
 npm install
 npm WARN deprecated to-iso-string@0.0.2: to-iso-string has been deprecated, use @segment/to-iso-string instead.

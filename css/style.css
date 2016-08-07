@@ -2,9 +2,9 @@ body, .modal-content {
     background-color: #E1F5FE;
     font-family: 'Marcellus SC', sans-serif;
 }
-h1, h3, h4 {
+h3, h4 {
     opacity: 0.87;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Alike Angular', serif;
 }
 p {
     opacity: 0.54;
