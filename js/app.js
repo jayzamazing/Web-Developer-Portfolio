@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#contact-form').submit(function(event) {
-        event.preventDefault();//prevents redirect to formspree website after post
+        event.preventDefault(); //prevents redirect to formspree website after post
         //Ajax request to send form data to formspree
         $.ajax({
             url: "https://formspree.io/adrianjaylopez@gmail.com",
@@ -12,6 +12,20 @@ $(document).ready(function() {
             },
             dataType: "json"
         });
+    });
+    //deal with slowly scrolling down the page if anchor link is clicked
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+            location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
     });
     //validate using jquery validation
     $('#contact-form').validate({
