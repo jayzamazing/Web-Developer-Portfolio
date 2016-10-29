@@ -55,13 +55,19 @@ p {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
     margin: 10px;
 }
-.social {
+.social-aside {
   max-width: 155.8px;
+}
+.social {
   margin: 10px auto;
   padding-left: 0;
 }
+.social-bottom {
+  max-width: 197px;
+}
 .social li {
     display: inline-block;
+    margin: 5px;
 }
 .social i {
   color: #4d4d4d;
