@@ -89,3 +89,6 @@ footer p {
 header h3 {
     color: white;
 }
+.hidden {
+    display: none;
+}

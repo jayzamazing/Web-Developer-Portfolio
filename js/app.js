@@ -3,15 +3,29 @@ $(document).ready(function() {
         event.preventDefault(); //prevents redirect to formspree website after post
         //Ajax request to send form data to formspree
         $.ajax({
-            url: "https://formspree.io/adrianjaylopez@gmail.com",
-            method: "POST",
+            url: 'https://formspree.io/adrianjaylopez@gmail.com',
+            method: 'POST',
             data: {
                 name: $('#full_name').val().trim(),
                 email: $('#email').val().trim(),
                 message: $('#message').val().trim()
             },
-            dataType: "json"
+            dataType: 'json'
+        }).done(function() {
+          //show success alert
+          $('.alert-success').removeClass('hidden');
+        }).fail(function() {
+          //show fail alert
+          $('.alert-danger').removeClass('hidden');
         });
+        //empty all fields
+        $('#full_name').value = '';
+        $('#email').value = '';
+        ('#message').value = '';
+    });
+    //function to hide alert element when close is clicked
+    $('[data-hide]').on('click', function(){
+        $(this).parent().addClass('hidden');
     });
     //deal with slowly scrolling down the page if anchor link is clicked
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -44,15 +58,15 @@ $(document).ready(function() {
         },
         messages: {
             full_name: { //messages to show if field is empty or if the minimum length is not meet
-                required: "I need to know who is trying to contact me",
-                minlength: jQuery.validator.format("Name must be at least {0} characters long.")
+                required: 'I need to know who is trying to contact me',
+                minlength: jQuery.validator.format('Name must be at least {0} characters long.')
             },
             email: { //messages to show if no email address is set or if email address is invalid
-                required: "Please enter a valid email address so I can get back in touch with you.",
-                email: "Please enter a valid email address so I can get back in touch with you."
+                required: 'Please enter a valid email address so I can get back in touch with you.',
+                email: 'Please enter a valid email address so I can get back in touch with you.'
             },
             message: { //message to show if message field is empty
-                required: "Please leave me a description of how I can help you."
+                required: 'Please leave me a description of how I can help you.'
             }
         }
     });
