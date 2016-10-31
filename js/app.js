@@ -11,7 +11,21 @@ $(document).ready(function() {
                 message: $('#message').val().trim()
             },
             dataType: 'json'
+        }).done(function() {
+          //show success alert
+          $('.alert-success').removeClass('hidden');
+        }).fail(function() {
+          //show fail alert
+          $('.alert-danger').removeClass('hidden');
         });
+        //empty all fields
+        $('#full_name').value = '';
+        $('#email').value = '';
+        ('#message').value = '';
+    });
+    //function to hide alert element when close is clicked
+    $('[data-hide]').on('click', function(){
+        $(this).parent().addClass('hidden');
     });
     //deal with slowly scrolling down the page if anchor link is clicked
     $('a[href*="#"]:not([href="#"])').click(function() {
