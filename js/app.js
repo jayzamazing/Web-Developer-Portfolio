@@ -1,27 +1,31 @@
 $(document).ready(function() {
-    $('#contact-form').submit(function(event) {
+    $('#contact-form-button').on('click', function(event) {
         event.preventDefault(); //prevents redirect to formspree website after post
-        //Ajax request to send form data to formspree
-        $.ajax({
-            url: 'https://formspree.io/adrianjaylopez@gmail.com',
-            method: 'POST',
-            data: {
-                name: $('#full_name').val().trim(),
-                email: $('#email').val().trim(),
-                message: $('#message').val().trim()
-            },
-            dataType: 'json'
-        }).done(function() {
-          //show success alert
-          $('.alert-success').removeClass('hidden');
-        }).fail(function() {
-          //show fail alert
-          $('.alert-danger').removeClass('hidden');
-        });
-        //empty all fields
-        $('#full_name').value = '';
-        $('#email').value = '';
-        ('#message').value = '';
+        var isvalidate=$('#contact-form').valid();
+        if(isvalidate)
+        {
+          //Ajax request to send form data to formspree
+          $.ajax({
+              url: 'https://formspree.io/adrianjaylopez@gmail.com',
+              method: 'POST',
+              data: {
+                  name: $('#full_name').val().trim(),
+                  email: $('#email').val().trim(),
+                  message: $('#message').val().trim()
+              },
+              dataType: 'json'
+          }).done(function() {
+            //show success alert
+            $('.alert-success').removeClass('hidden');
+          }).fail(function() {
+            //show fail alert
+            $('.alert-danger').removeClass('hidden');
+          });
+          //empty all fields
+          $('#contact-form')[0].reset();
+          $('#contact-form').validate().resetForm();
+        }
+
     });
     //function to hide alert element when close is clicked
     $('[data-hide]').on('click', function(){
