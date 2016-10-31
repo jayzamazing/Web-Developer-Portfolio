@@ -6,9 +6,9 @@ $(document).ready(function() {
             url: "https://formspree.io/adrianjaylopez@gmail.com",
             method: "POST",
             data: {
-                name: $('#full_name').val(),
-                email: $('#email').val(),
-                message: $('#message').val()
+                name: $('#full_name').val().trim(),
+                email: $('#email').val().trim(),
+                message: $('#message').val().trim()
             },
             dataType: "json"
         });
