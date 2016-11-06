@@ -60,6 +60,8 @@ p {
 }
 .social {
   padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .social-bottom {
   max-width: 197px;
