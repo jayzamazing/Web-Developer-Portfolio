@@ -93,3 +93,7 @@ header h3 {
 .hidden {
     display: none;
 }
+/* deal with extra padding sometimes added by jekyll to the footer */
+code {
+  padding: 0;
+}
