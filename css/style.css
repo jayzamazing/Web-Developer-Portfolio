@@ -16,7 +16,6 @@ p {
     height: 400px;
     background: url('../img/family.jpg') right center;
     background-origin: content-box;
-    background-size: length;
     margin-top: 70px;
     background-repeat: no-repeat;
 }
