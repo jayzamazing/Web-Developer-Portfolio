@@ -67,6 +67,7 @@ p {
     transition: none;
 }
 .social-aside {
+  margin-top: -30px;
   max-width: 155.8px;
 }
 .social {
@@ -107,4 +108,7 @@ header h3 {
 /* deal with extra padding sometimes added by jekyll to the footer */
 code {
   padding: 0;
+}
+.navbar-toggle {
+  margin-right: 25px;
 }
