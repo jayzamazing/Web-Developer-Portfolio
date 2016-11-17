@@ -15,7 +15,7 @@ The initial web and mobile wireframe are shown below:
 
 ###Prototype
 You can see the application in action at the following link:
-https://jayzamazing.github.io/Web-Developer-Portfolio
+http://jayzamazing.com/
 
 ###Technical
 Currently using HTML, CSS, Javascript, Jekyll, jQuery, Bootstrap, and the jQuery Validation Plugin.
