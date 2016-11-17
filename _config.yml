@@ -1,8 +1,8 @@
 # Site settings
 title: "Adrian J Lopez"
 description: "Web Developer"
-baseurl: "/Web-Developer-Portfolio"
-url: "http://localhost:4000"
+baseurl: "http://jayzamazing.com"
+url: "http://jayzamazing.com"
 twitter_username: AdrianJayLopez
 github_username: jayzamazing
 linkedin_username: adrian-lopez/99/341/688
