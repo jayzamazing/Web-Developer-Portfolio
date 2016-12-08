@@ -17,6 +17,8 @@ p {
     background-origin: content-box;
     margin-top: 70px;
     background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .jumbotron {
