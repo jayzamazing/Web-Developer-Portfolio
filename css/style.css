@@ -114,3 +114,7 @@ code {
 .navbar-toggle {
   margin-right: 25px;
 }
+.contact-section {
+  width: 96%;
+  margin: 0 auto;
+}
