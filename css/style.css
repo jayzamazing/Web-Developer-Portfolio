@@ -3,9 +3,15 @@ body, .modal-content {
     font-family: 'Marcellus SC', sans-serif;
     color: #4d4d4d;
 }
+.projects-section, .contact-section {
+  margin-top: 20px;
+}
+h2 {
+  margin-top: 0;
+}
 h3, h4 {
     opacity: 0.87;
-    font-family: 'Alike Angular', serif;
+    font-family: 'Alike', serif;
 }
 p {
     opacity: 0.54;
@@ -31,7 +37,7 @@ p {
     .jumbotron {
         text-align: none;
         background-size: 200px;
-        height: 325px;
+        height: 255px;
     }
     .jumbotron h1 {
         font-size: 3em;
@@ -42,7 +48,7 @@ p {
 }
 @media (min-width: 992px) {
     .jumbotron {
-      height: 400px;
+      height: 358px;
       background-size: inherit;
     }
     .jumbotron h1 {
@@ -114,7 +120,7 @@ code {
 .navbar-toggle {
   margin-right: 25px;
 }
-.contact-section {
-  width: 96%;
+.contact-form {
+  width: 96.8%;
   margin: 0 auto;
 }
