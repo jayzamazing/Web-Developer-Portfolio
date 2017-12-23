@@ -19,6 +19,3 @@ http://jayzamazing.com/
 
 ###Technical
 Currently using HTML, CSS, Javascript, Jekyll, jQuery, Bootstrap, and the jQuery Validation Plugin.
-
-###Local Usage
-When adding additional content ensure that either jekyll build or serve is used before deployment. _config.yml must have baseurl and url commented out for local testing. 
