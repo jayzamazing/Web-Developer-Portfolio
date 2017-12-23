@@ -3,9 +3,10 @@ layout: default
 ---
 <section class="description">
     <div class="row">
-        <div class="posts col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+        <div class="posts col-xs-12 col-md-12 col-lg-12">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                <h3>{{ page.title }}</h3> {{ content }}
+                <h3>{{ page.title }} - {{page.date | date_to_long_string}}</h3>
+                {{ content }}
             </div>
             {% include recentrelatedposts.html %}
         </div>
