@@ -124,3 +124,7 @@ code {
   width: 96.8%;
   margin: 0 auto;
 }
+.posts {
+  margin: 0 auto;
+  float: none;
+}
